@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>AI DJT Speeches</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+  #more {display: none;}
+
+  .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  }
+
+  .button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  }
+  .button1:hover {background-color: #e7e7e7;}
+
+  .center {
+  text-align: center;
+  }
+
+  .left {
+  text-align: left;
+  }
+
+  .top-buffer { margin-top:25px; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-right">
+    <div class="container">
+      <a class="navbar-brand" href="#" onclick="javascript:location.reload(true);">AI Generated DJT speech</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="javascript:location.reload(true);">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Page Content -->
+  <section>
+    <div class="container">
+      <div class="row justify-content-center text-center row top-buffer">
+        <div class="col-auto">
+          <h1 class="center" 
+            <a href="#" onclick="javascript:location.reload(true);">
+              Very cool! A speech just for you &#128076;
+            </a>
+          </h1>
+
+          <p class="left mx-xl-5">{{less|safe}}
+
+          <span id="dots">...</span><span id="more">
+
+          {{more|safe}}
+
+          </span>
+          
+          </p>
+          <button class="button button1" onclick="myFunction()" id="myBtn">YUGE! show me more</button>
+          <!-- <input type="reset" name="reset_button" value="YUGE! Give me another"> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "YUGE! show me more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Low energy, show me less"; 
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+
+</body>
+
+</html>
